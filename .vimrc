@@ -43,11 +43,11 @@ set updatetime=10
 let g:airline#extensions#tabline#enabled = 1
 
 "Theme settings
-"set termguicolors
 set background=dark
 colorscheme hybrid_reverse
 let g:airline_theme = "hybridline"
 set antialias
+highlight GitGutterDelete guifg=#cb4b16
 
 "MacVim specific stuff
 "Hide scrollbars
@@ -78,7 +78,6 @@ map <F8> :vertical wincmd f<CR>
 nnoremap <F2> :set invpaste paste?<CR>
 nnoremap tn :tabnew<CR>
 map <A-D> <C-D>
-syntax enable
 filetype plugin indent on
 autocmd Filetype html setlocal ts=2 sts=2 sw=2
 autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
