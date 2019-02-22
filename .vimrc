@@ -37,7 +37,7 @@ map <C-s> :GFiles?<CR>
 map <C-b> :Buffers<CR>
 
 "Gitgutter settings
-set updatetime=100
+set updatetime=10
 
 "Airline settings
 let g:airline#extensions#tabline#enabled = 1
@@ -83,3 +83,5 @@ filetype plugin indent on
 autocmd Filetype html setlocal ts=2 sts=2 sw=2
 autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
 autocmd BufNewFile,BufRead *.slim setlocal filetype=slim
+cnoreabbrev WS mksession! ~/.vim/workspace
+cnoreabbrev wl source ~/.vim/workspace
