@@ -46,7 +46,6 @@ let g:airline#extensions#tabline#enabled = 1
 set background=dark
 colorscheme hybrid_reverse
 let g:airline_theme = "hybridline"
-set antialias
 highlight GitGutterDelete guifg=#cb4b16
 
 "MacVim specific stuff
@@ -84,3 +83,4 @@ autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
 autocmd BufNewFile,BufRead *.slim setlocal filetype=slim
 cnoreabbrev WS mksession! ~/.vim/workspace
 cnoreabbrev wl source ~/.vim/workspace
+cnoreabbrev vres vertical resize
