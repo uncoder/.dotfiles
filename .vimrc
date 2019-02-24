@@ -32,7 +32,7 @@ map gn :NERDTreeToggle<CR>
 "FZF settings
 map <C-p> :FZF<CR>
 map <C-s> :GFiles?<CR>
-nnoremap bb :Buffers<CR>
+nnoremap gb :Buffers<CR>
 
 "Gitgutter settings
 set updatetime=10
