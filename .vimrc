@@ -20,6 +20,7 @@ Plug 'slim-template/vim-slim'
 Plug 'tpope/vim-rails'
 Plug 'plasticboy/vim-markdown'
 Plug 'vim-ruby/vim-ruby'
+Plug 'elzr/vim-json'
 
 "Tools
 Plug 'terryma/vim-multiple-cursors'
@@ -80,7 +81,7 @@ set lazyredraw
 
 "Cusom mappings
 nmap dD mzyyp`z
-map <F8> :vertical wincmd f<CR>
+map <F8> :%!python -m json.tool<CR>
 nnoremap <F2> :set invpaste paste?<CR>
 nnoremap tn :tabnew<CR>
 map <A-D> <C-D>
