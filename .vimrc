@@ -38,22 +38,24 @@ nnoremap gb :Buffers<CR>
 "Gitgutter settings
 set updatetime=10
 
-"Airline settings
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_powerline_fonts=1
-"let g:airline#extensions#tabline#left_sep = ''
-"let g:airline#extensions#tabline#left_alt_sep = '|'
-
 "Theme settings
+if has("gui_running")
+  set guifont=Roboto\ Mono\ for\ Powerline
+endif
+
 set termguicolors
 set background=dark
-let g:airline_theme = 'wombat'
 colorscheme gruvbox
 highlight clear SignColumn
 highlight GitGutterAdd guifg=#afb726 guibg=#282828
 highlight GitGutterChange guifg=#538991 guibg=#282828
 highlight GitGutterChangeDelete guifg=#538991 guibg=#282828
 highlight GitGutterDelete guifg=#f34834 guibg=#282828
+
+"Airline settings
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts=1
+let g:airline_theme='bubblegum'
 
 "MacVim specific stuff
 "Hide scrollbars
