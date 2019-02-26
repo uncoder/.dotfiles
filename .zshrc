@@ -2,7 +2,13 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/maxim/.oh-my-zsh"
+if [[ `uname` == "Linux" ]]; then
+  export ZSH="/home/uncoder/.oh-my-zsh"
+elif [[ `uname` == "Darwin" ]]; then
+  export ZSH="/Users/maxim/.oh-my-zsh"
+else
+  echo 'Unknown OS!'
+fi
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -63,7 +69,7 @@ SOLARIZED_THEME="dark"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git fzf tmux vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -95,7 +101,5 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 source ~/.bash_aliases
