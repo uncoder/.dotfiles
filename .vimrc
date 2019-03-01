@@ -21,6 +21,7 @@ Plug 'tpope/vim-rails'
 Plug 'plasticboy/vim-markdown'
 Plug 'vim-ruby/vim-ruby'
 Plug 'elzr/vim-json'
+Plug 'elixir-editors/vim-elixir'
 
 "Tools
 Plug 'terryma/vim-multiple-cursors'
