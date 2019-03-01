@@ -82,16 +82,20 @@ set pastetoggle=<F2>
 set showmode
 set lazyredraw
 
-"Cusom mappings
+"Cusom settings
 nmap dD mzyyp`z
 map <F8> :%!python -m json.tool<CR>
 nnoremap <F2> :set invpaste paste?<CR>
 nnoremap tn :tabnew<CR>
 map <A-D> <C-D>
 filetype plugin indent on
-autocmd Filetype html setlocal ts=2 sts=2 sw=2
-autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
-autocmd BufNewFile,BufRead *.slim setlocal filetype=slim
 cnoreabbrev WS mksession! ~/.vim/workspace
 cnoreabbrev wl source ~/.vim/workspace
 cnoreabbrev vres vertical resize
+command BD bp|bd
+
+"Autocmd
+autocmd Filetype html setlocal ts=2 sts=2 sw=2
+autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
+autocmd BufNewFile,BufRead *.slim setlocal filetype=slim
+autocmd BufWritePre * :%s/\s\+$//e
