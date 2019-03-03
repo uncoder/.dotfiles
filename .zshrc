@@ -103,3 +103,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 source ~/.bash_aliases
+
+function chpwd() {
+  ls -a
+}
