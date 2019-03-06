@@ -22,6 +22,7 @@ Plug 'plasticboy/vim-markdown'
 Plug 'vim-ruby/vim-ruby'
 Plug 'elzr/vim-json'
 Plug 'elixir-editors/vim-elixir'
+Plug 'slashmili/alchemist.vim'
 
 "Tools
 Plug 'terryma/vim-multiple-cursors'
@@ -81,6 +82,7 @@ set clipboard=unnamed
 set pastetoggle=<F2>
 set showmode
 set lazyredraw
+set nohlsearch
 
 "Cusom settings
 nmap dD mzyyp`z
