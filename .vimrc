@@ -83,6 +83,7 @@ set pastetoggle=<F2>
 set showmode
 set lazyredraw
 set nohlsearch
+set autoindent
 
 "Cusom settings
 nmap dD mzyyp`z
