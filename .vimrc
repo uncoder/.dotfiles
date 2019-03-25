@@ -84,6 +84,7 @@ set showmode
 set lazyredraw
 set nohlsearch
 set autoindent
+set so=5
 
 "Cusom settings
 nmap dD mzyyp`z
