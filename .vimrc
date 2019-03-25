@@ -37,6 +37,7 @@ map gn :NERDTreeToggle<CR>
 map <C-p> :FZF<CR>
 map <C-s> :GFiles?<CR>
 nnoremap gb :Buffers<CR>
+let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 
 "Gitgutter settings
 set updatetime=10
