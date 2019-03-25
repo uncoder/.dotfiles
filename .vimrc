@@ -5,6 +5,7 @@ call plug#begin()
 Plug 'scrooloose/nerdtree'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'rking/ag.vim'
 
 "Git plugins
 Plug 'tpope/vim-fugitive'
@@ -25,7 +26,7 @@ Plug 'elixir-editors/vim-elixir'
 
 "Tools
 Plug 'terryma/vim-multiple-cursors'
-Plug 'rking/ag.vim'
+Plug 'tpope/vim-surround'
 call plug#end()
 
 "NERD tree settings

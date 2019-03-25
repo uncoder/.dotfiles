@@ -107,3 +107,5 @@ source ~/.bash_aliases
 function chpwd() {
   ls -a
 }
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
