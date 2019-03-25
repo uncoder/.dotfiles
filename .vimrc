@@ -23,6 +23,7 @@ Plug 'vim-ruby/vim-ruby'
 Plug 'elzr/vim-json'
 Plug 'elixir-editors/vim-elixir'
 Plug 'slashmili/alchemist.vim'
+Plug 'tpope/vim-surround'
 
 "Tools
 Plug 'terryma/vim-multiple-cursors'
