@@ -23,6 +23,8 @@ Plug 'plasticboy/vim-markdown'
 Plug 'vim-ruby/vim-ruby'
 Plug 'elzr/vim-json'
 Plug 'elixir-editors/vim-elixir'
+Plug 'slashmili/alchemist.vim'
+Plug 'tpope/vim-surround'
 
 "Tools
 Plug 'terryma/vim-multiple-cursors'
@@ -36,6 +38,7 @@ map gn :NERDTreeToggle<CR>
 map <C-p> :FZF<CR>
 map <C-s> :GFiles?<CR>
 nnoremap gb :Buffers<CR>
+let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 
 "Gitgutter settings
 set updatetime=10
@@ -82,6 +85,9 @@ set clipboard=unnamed
 set pastetoggle=<F2>
 set showmode
 set lazyredraw
+set nohlsearch
+set autoindent
+set so=5
 
 "Cusom settings
 nmap dD mzyyp`z
