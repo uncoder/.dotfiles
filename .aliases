@@ -1,0 +1,8 @@
+alias vim="nvim"
+alias dcr="docker-compose run -u $UID:$GID"
+alias dra="docker-compose run app"
+alias da="docker attach --sig-proxy=false"
+alias t="tmux"
+alias ta="tmux att"
+
+cl() { cd "$1" && ls -a; }
