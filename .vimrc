@@ -88,10 +88,13 @@ set lazyredraw
 set nohlsearch
 set autoindent
 set so=5
+set ignorecase
+set smartcase
 
 "Cusom settings
 nmap dD mzyyp`z
 map <F8> :%!python -m json.tool<CR>
+map <F7> :!ruby %<CR>
 nnoremap <F2> :set invpaste paste?<CR>
 nnoremap tn :tabnew<CR>
 map <A-D> <C-D>
