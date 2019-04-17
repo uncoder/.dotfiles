@@ -29,6 +29,7 @@ Plug 'tpope/vim-surround'
 "Tools
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-surround'
+Plug 'w0rp/ale'
 call plug#end()
 
 "NERD tree settings
@@ -43,6 +44,12 @@ let $FZF_DEFAULT_COMMAND = 'ag -g ""'
 "Gitgutter settings
 set updatetime=10
 
+"Linters
+let g:ale_linters = { 'ruby': ['rubocop'] }
+let g:ale_linters_explicit = 1
+let g:airline#extensions#ale#enabled = 1
+let g:ale_set_highlights = 0
+
 "Theme settings
 if has("gui_running")
   set guifont=Roboto\ Mono\ for\ Powerline
@@ -56,6 +63,7 @@ highlight GitGutterAdd guifg=#afb726 guibg=#282828
 highlight GitGutterChange guifg=#538991 guibg=#282828
 highlight GitGutterChangeDelete guifg=#538991 guibg=#282828
 highlight GitGutterDelete guifg=#f34834 guibg=#282828
+highlight ALEWarningSign guibg=#282828
 
 "Airline settings
 let g:airline#extensions#tabline#enabled = 1
