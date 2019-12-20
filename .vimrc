@@ -55,7 +55,6 @@ if has("gui_running")
   set guifont=Roboto\ Mono\ for\ Powerline
 endif
 
-set termguicolors
 set background=dark
 colorscheme gruvbox
 highlight clear SignColumn
